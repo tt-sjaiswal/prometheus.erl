@@ -4,7 +4,7 @@
 
 Copyright (c) 2016,2017 Ilya Khaprov <<i.khaprov@gmail.com>>.
 
-__Version:__ 4.2.2
+__Version:__ 4.4.1
 
 [![Hex.pm](https://img.shields.io/hexpm/v/prometheus.svg?maxAge=2592000?style=plastic)](https://hex.pm/packages/prometheus)
 [![Hex.pm](https://img.shields.io/hexpm/dt/prometheus.svg?maxAge=2592000)](https://hex.pm/packages/prometheus)
@@ -232,9 +232,9 @@ prometheus_vm_system_info_collector
 
 ### Configuration
 
-All 3d-party libraries should be configured via `prometheus` app env.
+All 3rd-party libraries should be configured via `prometheus` app env.
 
-Exproters are responsible for maintianing scrape endpoint.
+Exporters are responsible for maintaining scrape endpoint.
 Exporters usually tightly coupled with web server and are singletons. They should understand these keys:
  - `path` - url for scraping;
  - `format` - scrape format as module name i.e. `prometheus_text_format` or `prometheus_protobuf_format`.
@@ -288,6 +288,7 @@ MIT
 <tr><td><a href="https://github.com/deadtrickster/prometheus.erl/blob/master/doc/prometheus_summary.md" class="module">prometheus_summary</a></td></tr>
 <tr><td><a href="https://github.com/deadtrickster/prometheus.erl/blob/master/doc/prometheus_text_format.md" class="module">prometheus_text_format</a></td></tr>
 <tr><td><a href="https://github.com/deadtrickster/prometheus.erl/blob/master/doc/prometheus_time.md" class="module">prometheus_time</a></td></tr>
+<tr><td><a href="https://github.com/deadtrickster/prometheus.erl/blob/master/doc/prometheus_vm_dist_collector.md" class="module">prometheus_vm_dist_collector</a></td></tr>
 <tr><td><a href="https://github.com/deadtrickster/prometheus.erl/blob/master/doc/prometheus_vm_memory_collector.md" class="module">prometheus_vm_memory_collector</a></td></tr>
 <tr><td><a href="https://github.com/deadtrickster/prometheus.erl/blob/master/doc/prometheus_vm_statistics_collector.md" class="module">prometheus_vm_statistics_collector</a></td></tr>
 <tr><td><a href="https://github.com/deadtrickster/prometheus.erl/blob/master/doc/prometheus_vm_system_info_collector.md" class="module">prometheus_vm_system_info_collector</a></td></tr></table>
